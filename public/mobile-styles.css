@@ -112,7 +112,7 @@
         font-family: 'Ubuntu', sans-serif;
         font-weight: bold;
         padding: 20px 20px; 
-        height: 29ch;
+        height: 35ch;
         overflow: hidden;
         letter-spacing: .15em; 
         animation: typing 2s steps(5, end) step-end infinite;
