@@ -64,8 +64,8 @@
         -webkit-backdrop-filter: blur(15px);
         backdrop-filter: blur(15px);
         margin: 0;
-        margin-top: 600px;
-        padding-top: 50px;
+        margin-top: 550px;
+        padding-top: 100px;
         flex-direction: column;
         flex: 1;
         font-size: 14px; 
