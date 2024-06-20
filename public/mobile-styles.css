@@ -102,7 +102,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 30vh; /* Reduced height for smaller screens */
+        height: 40vh; /* Reduced height for smaller screens */
         margin: 130px 5px 40px 5px;
     }
 
