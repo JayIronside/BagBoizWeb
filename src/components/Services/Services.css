@@ -1,0 +1,126 @@
+/* General Styles for Services Section */
+.services-section {
+  padding: 2rem;
+  background: linear-gradient(120deg, #292626, #3d3d3d);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Services Header */
+.services-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  animation: fade-in 1s ease-in-out;
+}
+
+.services-header h4 {
+  font-size: 1.5rem;
+  color: #f4b400; /* Gold color for emphasis */
+}
+
+.services-header h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.services-intro {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+/* Service Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+/* Service Card Styling */
+.service-card {
+  background: #3d3d3d;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(8px); /* Slight blur for card background */
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Service Icon Styling */
+.service-icon {
+  font-size: 3rem;
+  color: #f4b400; /* Gold icon for contrast */
+  margin-bottom: 1rem;
+}
+
+/* Service Card Title and Description */
+.service-card h4 {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+/* View All Services Link */
+.services-link {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.view-all-link {
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #f4b400; /* Gold background */
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.view-all-link:hover {
+  background-color: #e09500;
+  transform: translateY(-3px); /* Slight lift effect */
+}
+
+/* Animation for fading in the header */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .services-header h3 {
+    font-size: 1.8rem;
+  }
+
+  .service-card {
+    padding: 1rem;
+  }
+
+  .view-all-link {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
+}
