@@ -1,0 +1,49 @@
+/* General Styles for Artist Section */
+.artist-spotify {
+  margin: 20px 0;
+  text-align: center;
+  position: relative;
+  padding: 1rem;
+  background: linear-gradient(120deg, #292626, #3d3d3d);
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* Artist Spotify iFrame Styling */
+.artist-spotify iframe {
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effects for iFrame */
+.artist-spotify iframe:hover {
+  transform: scale(1.05); /* Slight zoom-in effect */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Animation for Section Fade-In */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.artist-spotify {
+  animation: fade-in 1s ease-out;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .artist-spotify iframe {
+    width: 100%;
+    /*height: auto; */
+  }
+}
